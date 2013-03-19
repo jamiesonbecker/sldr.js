@@ -10,34 +10,46 @@
     }, options);
    
     // plugin vars
-    var slider = this,
-        slide = $('.sldr').children(),
-        next = $('.next'),
-        prev = $('.prev'),
+    var slider = $('.sldr'),
+        slide = $('.sldr li'),
+        img = $('.sldr li img'),
+        next = $('.sldr-next'),
+        prev = $('.sldr-prev'),
         current = 0,
         images = [];
 
     // plugin logic 
     var init = function() {
+      setSize();
+      
       slide.each(function(a) {
         images[a] = $(this);
-        console.log($(this));
       });
       
       last = images.length - 1;
-     
+      
       images[current].show();
       
       next.on('click', function() {
         nav(last,0,true);
       });
-
+      
       prev.on('click', function() {
         nav(0,last,false);
       });
     };
-    
-    // function helpers
+   
+    // get the size of the images
+    // and set the same size for the slider
+    function setSize() {
+      img.load(function() {
+        slider.parent().css('width', img.width() + 100);
+        slider.css('width', img.width());
+        slider.css('height', img.height());
+      });
+    }
+
+    // navigation
     function nav(a,b,c) {
       images[current].fadeOut(s.speed);
 
