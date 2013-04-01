@@ -9,3 +9,4 @@
 - setup options to make it customizable - **DONE**
 - do some instructions
 - take off next & prev from markup and generate from js
+- add automatic slide feature

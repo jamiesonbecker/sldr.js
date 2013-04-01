@@ -28,7 +28,7 @@
       
       last = images.length - 1;
       
-      images[current].show();
+      images[current].show(0, setDisplay);
       
       next.on('click', function() {
         nav(last,0,true);
@@ -48,6 +48,10 @@
         slider.css('height', img.height());
       });
     }
+    
+    function setDisplay() {
+      $(this).css('display', 'table');
+    }
 
     // navigation
     function nav(a,b,c) {
@@ -59,7 +63,7 @@
         c ? current++ : current--;
       }
 
-      images[current].delay(s.speed/10).fadeIn(s.speed);
+      images[current].delay(s.speed).fadeIn(s.speed, setDisplay);
     }
     
     // do it
