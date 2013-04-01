@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Slider</title>
+  <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main" role="main">
+    <div class="sldr-container">
+      <div class="sldr-next"> &gt; </div>
+      <div class="sldr-prev"> &lt; </div>
+      <ul class="sldr">
+        <li>
+        <div class="slide-1">
+            <img src="images/logo.png" width="200">
+            <h1>PCI, HIPPA, SOX</h1> 
+            <p>Each security standard requires that administrative and developer users (real persons) have their own user ID and set of credentials. Userify creates Linux accounts for your users and deploys SSH keys and configures root permissions for the operating system.</p>
+          </div>
+        </li>
+        <li><img src="images/slide2.png"></li>
+      </ul> <!-- end of slider --> 
+    </div> <!-- end of slider-container -->
+  </div> <!-- end of main --> 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="../sldr.js"></script>
+  <script>
+    $('.slider-container').sldr({
+      speed: 500
+    });
+  </script>
+</body>
+</html>
