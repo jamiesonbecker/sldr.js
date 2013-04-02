@@ -121,7 +121,9 @@ h1 {
   width: 200px;
   height: auto; }
 
-.slide-1 > p { font-size: 14px; }
+.slide-1 > p { 
+  font-size: 14px; 
+  font-weight: bold; } 
 
 .slide-2 { 
   background: #fff;
