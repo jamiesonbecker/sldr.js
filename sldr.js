@@ -49,6 +49,7 @@
       });
     }
     
+    // add display: table to parent element
     function setDisplay() {
       $(this).css('display', 'table');
     }

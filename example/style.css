@@ -40,11 +40,16 @@
 
 /* custom */
 
-h1 { margin-top: 0; }
+body { font-family: 'Open Sans' sans-serif; }
+
+h1 { 
+  margin-top: 0;
+  color: #fcbd48;
+  font-weight: 800; }
 
 .slide-1 { 
   width: 700px; 
   height: 319px;
   padding: 1em 2em;
   color: #fff;
-  background: url('images/blackdiamond.jpg'); }
+  background: url('images/blackdiamond2.jpg'); }
