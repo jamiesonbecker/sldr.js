@@ -123,7 +123,8 @@ h1 {
 
 .slide-1 > p { 
   font-size: 14px; 
-  font-weight: bold; } 
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #333; } 
 
 .slide-2 { 
   background: #fff;
