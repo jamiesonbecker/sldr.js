@@ -49,10 +49,7 @@
       });
     }
     
-<<<<<<< HEAD
-=======
     // add display: table to parent element
->>>>>>> gh-pages
     function setDisplay() {
       $(this).css('display', 'table');
     }

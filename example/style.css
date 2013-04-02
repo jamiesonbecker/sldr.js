@@ -38,18 +38,6 @@
 .sldr-prev { left: -30px; }
 .sldr-next { right: -30px; }
 
-<<<<<<< HEAD
-/* custom */
-
-h1 { margin-top: 0; }
-
-.slide-1 { 
-  width: 700px; 
-  height: 319px;
-  padding: 2em;
-  color: #fff;
-  background: url('images/blackdiamond.jpg'); }
-=======
 /* --- CUSTOM --- */
 
 /* base */
@@ -128,4 +116,3 @@ h1 {
   float: left; 
   margin-right: 1em; 
   margin-left: -2em; }
->>>>>>> gh-pages
