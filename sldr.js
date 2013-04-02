@@ -20,7 +20,7 @@
 
     // plugin logic 
     var init = function() {
-      setSize();
+    // setSize();
       
       slide.each(function(a) {
         images[a] = $(this);
